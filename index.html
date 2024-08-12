@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portefolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Helder Ramos</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Helder Ramos</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/images/Hélder Photo Circle.png" alt="Hélder Ramos profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Helder Ramos</p>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/documents/CV Resume Version 1 EN.pdf')">
+                    Download CV
+                </button>
+                <button 
+                    class="btn btn-color-1"
+                    onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img
+                    src="./assets/images/linkedin.png"
+                    alt="My LinkedIn profile"
+                    class="icon"
+                    onclick="location.href='https://linkedin.com/in/hélder-ramos/'"
+                />
+                <img
+                    src="./assets/images/github.png"
+                    alt="My GitHub profile"
+                    class="icon"
+                    onclick="location.href='https://github.com/heldergomesramos/'"
+                />
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
