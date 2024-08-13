@@ -2,7 +2,7 @@
 @font-face {
   font-family: 'ThaleahFat';
   src: url('/assets/fonts/ThaleahFat.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: 10;
   font-style: normal;
 }
 
@@ -23,17 +23,7 @@
   --color-hover: rgb(181, 181, 181);
   --color-text: black;
   --color-text-hover: white;
-}
-
-:root {
-  --color-primary: #9ad4a7; 
-  --color-secondary: #27883c; 
-  --color-tertiary: #9ad4a7;
-  --color-accent: #33dc58; 
-  --color-background: #0d160f;
-  --color-hover: #33dc58; 
-  --color-text: #ffffff;
-  --color-text-hover: #9ad4a7;
+  --color-details-border: rgb(163, 163, 163);
 }
 
 *{
@@ -44,12 +34,12 @@
 body {
   background-color: var(--color-background);
   /* font-family: sans-serif; */
-   font-family: 'Pixelify Sans', sans-serif; 
+  font-family: 'ThaleahFat', sans-serif; 
 }
 
 html {
   scroll-behavior: smooth;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 p {
@@ -60,6 +50,8 @@ p {
 a,
 .btn {
   transition: all 300ms ease;
+  font-family: 'ThaleahFat', sans-serif; 
+  font-size: 1rem;
 }
 
 /* Desktop */
@@ -217,7 +209,7 @@ section {
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 10;
 }
 
 .section__text__p1 {
@@ -225,12 +217,12 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   color: var(--color-text);
 }
@@ -246,7 +238,7 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 /* Buttons */
@@ -258,7 +250,7 @@ section {
 }
 
 .btn {
-  font-weight: 600;
+  font-weight: 10;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
@@ -318,4 +310,120 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: var(--color-accent) 0.1rem solid;
+  border-color: var(--color-details-border);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* Experience Section */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: var(--color-tertiary);
+  font-weight: 10;
+  font-size: 1.5rem;
+}
+
+.experience-details-container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 6rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* Game Development */
+
+#game-development {
+  position: relative;
+}
+
+.color-container {
+  border-color: var(--color-details-border);
+  background: var(--color-background);
+}
+
+.project-img {
+  border-radius: 0rem;
+  width: 100%;
+  height: 100%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: var(--color-text);
+}
+
+.project-btn {
+  color: var(--color-text);
+  border-color: var(--color-details-border);
+}
+
+/* Audio Player */
+
+.audio-player {
+  width: 400px;
+  margin: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 10px;
+  background-color: #ccc;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #4caf50;
+}
+
+#current-time, #total-time {
+  margin-top: 10px;
 }
