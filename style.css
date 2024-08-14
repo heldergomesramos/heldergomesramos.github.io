@@ -135,7 +135,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--color-text);
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -296,10 +296,11 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 1rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
 }
 
 .about-details-container {
@@ -398,32 +399,66 @@ article .icon {
   border-color: var(--color-details-border);
 }
 
-/* Audio Player */
+/* Music Production */
 
-.audio-player {
-  width: 400px;
-  margin: 20px;
+.music-title {
+  margin-top: .5rem;
+  color: var(--color-text);
+  font-size: 1.2rem;
+  font-weight: 20;
 }
 
-.controls {
+.music-artists {
+  margin-bottom: .5rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 10;
+}
+
+/* Contact Section */
+
+#contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: var(--color-accent) 0.1rem solid;
+  border-color: var(--color-details-border);
+  background: var(--color-background);
+  margin: 2rem;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display:flex;
   align-items: center;
-  margin-top: 10px;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
 }
 
-.progress {
-  height: 10px;
-  background-color: #ccc;
-  margin-top: 10px;
+.contact-info-container p {
+  font-size: larger;
 }
 
-.progress-bar {
-  width: 0;
-  height: 100%;
-  background-color: #4caf50;
+.contact-icon {
+  cursor: default;
+  height: 2rem;
 }
 
-#current-time, #total-time {
-  margin-top: 10px;
+/* Footer Section */
+
+footer {
+  height: 26vh;
+  margin: 0.1rem;
+}
+
+footer p{
+  text-align: center;
 }

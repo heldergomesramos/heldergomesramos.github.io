@@ -35,7 +35,8 @@
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#game-development" onclick="toggleMenu()">Game Development</a></li>
+                <li><a href="#music-production" onclick="toggleMenu()">Music Production</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
@@ -300,7 +301,7 @@
                     <div class="btn-container">
                         <button
                             class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://pofinho.itch.io/district-dash'">
+                            onclick="location.href='https://cemanuelsilva.itch.io/shape-shift-snacker-a-slimy-adventure'">
                             Explore
                         </button>
                     </div>
@@ -333,54 +334,157 @@
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img 
-                            src="./assets/images/album1-cover.jpg" 
-                            alt="Album 1"
+                            src="./assets/images/Rise and Shine Artwork.png" 
+                            alt="Rise and Shine cover"
                             class="project-img"
                         />
                     </div>
-                    <h2 class="experience-sub-title project-title">Album 1 Title</h2>
+                    <h2 class="music-title">Rise and Shine</h2>
+                    <h3 class="music-artists">Pofinho</h3>
                     <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://open.spotify.com/album/album1_id'">
-                            Listen on Spotify
-                        </button>
+                        <div class="audio-player">
+                            <audio id="audio" controls>
+                                <source src="./assets/audio/Pofinho - Rise and Shine.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div id="socials-container">
+                        <img
+                            src="./assets/images/youtube circle.png"
+                            alt="Youtube"
+                            class="icon"
+                            onclick="location.href='https://youtu.be/LFSBZKNRfGc?si=2nDlc9WBujNi6Hmy'"
+                        />
+                        <img
+                            src="./assets/images/spotify.png"
+                            alt="Spotify"
+                            class="icon"
+                            onclick="location.href='https://open.spotify.com/track/7ptw3OTktwbsYKAiO7MX3T?si=12256ad41c98452a'"
+                        />
+                        <img
+                            src="./assets/images/soundcloud.png"
+                            alt="Soundcloud"
+                            class="icon"
+                            onclick="location.href='https://soundcloud.com/pofinho-music14/pofinho-rise-and-shine?si=7404051db4e3494084c8feb551081c48&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'"
+                        />
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img 
-                            src="./assets/images/album2-cover.jpg" 
-                            alt="Album 2"
+                            src="./assets/images/Call Out Remix Cover.jpg" 
+                            alt="Call Out Remix cover"
                             class="project-img"
                         />
                     </div>
-                    <h2 class="experience-sub-title project-title">Album 2 Title</h2>
+                    <h2 class="music-title">Call Out (Pofinho Remix)</h2>
+                    <h3 class="music-artists">Dimatis, Baiza</h3>
                     <div class="btn-container">
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://open.spotify.com/album/album2_id'">
-                            Listen on Spotify
-                        </button>
+                        <div class="audio-player">
+                            <audio id="audio" controls>
+                                <source src="./assets/audio/Dimatis & Bayza - Call Out (Pofinho Remix).mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <div id="socials-container">
+                        <img
+                            src="./assets/images/youtube circle.png"
+                            alt="Youtube"
+                            class="icon"
+                            onclick="location.href='https://youtu.be/gEK6Y1IaBqw?si=KkC29lrbDOnMe4Ph'"
+                        />
+                        <img
+                            src="./assets/images/spotify.png"
+                            alt="Spotify"
+                            class="icon"
+                            onclick="location.href='https://open.spotify.com/track/2V8FlPdd8ziYx0O7kZJOnO?si=28cc73963cda4714'"
+                        />
+                        <img
+                            src="./assets/images/soundcloud.png"
+                            alt="Soundcloud"
+                            class="icon"
+                            onclick="location.href='https://soundcloud.com/pofinho-music14/dimatis-bayza-call-out-pofinho-remix?si=835adccd5e8f4ceaaedf9361061d704a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'"
+                        />
                     </div>
                 </div>
-                <div class="audio-player">
-                    <audio id="audio" controls>
-                        <source src="./assets/audio/Pofinho - Rise and Shine.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <div class="controls">
-                        <button id="play-pause-button">Play</button>
-                        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/images/Drowning Artwork.jpg" 
+                            alt="Drowning cover"
+                            class="project-img"
+                        />
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar" id="progress-bar"></div>
+                    <h2 class="music-title">Drowning</h2>
+                    <h3 class="music-artists">Pofinho</h3>
+                    <div class="btn-container">
+                        <div class="audio-player">
+                            <audio id="audio" controls>
+                                <source src="./assets/audio/Pofinho - Drowning.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
                     </div>
-                    <div id="current-time">0:00</div>
-                    <div id="total-time">0:00</div>
+                    <div id="socials-container">
+                        <img
+                            src="./assets/images/youtube circle.png"
+                            alt="Youtube"
+                            class="icon"
+                            onclick="location.href='https://youtu.be/EOfgTkjplMg?si=4wn_Yoz_gUIl14hP'"
+                        />
+                        <img
+                            src="./assets/images/spotify.png"
+                            alt="Spotify"
+                            class="icon"
+                            onclick="location.href='https://open.spotify.com/track/7dKs0EeT7y2tFurcn346Ow?si=5e7677056f4c42db'"
+                        />
+                        <img
+                            src="./assets/images/soundcloud.png"
+                            alt="Soundcloud"
+                            class="icon"
+                            onclick="location.href='https://soundcloud.com/pofinho-music14/pofinho-drowning?si=b141a3dc2fe3487aa1dfe3f8c58f99a3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing'"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                    src="assets/images/email.png" 
+                    alt="Email icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="mailto:helderramos1414@gmail.com">helderramos1414@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                    src="assets/images/LinkedIn Icon Black.png" 
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://linkedin.com/in/hélder-ramos/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#game-development">Game Development</a></li>
+                    <li><a href="#music-production">Music Production</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
     <script src="script.js"></script>
 </body>
