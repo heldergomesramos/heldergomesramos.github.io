@@ -487,10 +487,6 @@ audio::-webkit-media-controls-volume-slider{
   padding-right: 10px;
 }
 
-audio::-webkit-media-controls-play-button {
-  color: var(--color-text);
-}
-
 /* Contact Section */
 
 #contact {
