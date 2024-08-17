@@ -16,31 +16,11 @@
   font-style: normal;
 }
 
-/*
 :root {
-  --color-primary: black;
-  --color-secondary: grey;
-  --color-tertiary: rgb(85, 85, 85);
-  --color-accent: rgb(53, 53, 53);
-  --color-background: white;
-  --color-hover: rgb(181, 181, 181);
-  --color-text: black;
-  --color-text-hover: white;
-  --color-details-border: rgb(163, 163, 163);
-}
-*/
-
-:root {
-  --color-primary: #6b9efc;
-  --color-secondary: #a922ff;
-  --color-accent: rgb(53, 53, 53);
   --color-background: #18101f;
-  --color-hover: rgb(181, 181, 181);
   --color-text: #ffffff;
-  --color-text-p1: #743ad5;
-  --color-text-p2: #743ad5;
+  --color-text-purple: #743ad5;
   --color-text-title: #f05928;
-  --color-details-border: rgb(163, 163, 163);
   --color-border-gradient-1: #743ad5;
   --color-border-gradient-2: #d53a9d;
 }
@@ -98,7 +78,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-secondary);
+  color: var(--color-text-purple);
 }
 
 .link-alternate-color {
@@ -140,7 +120,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: var(--color-text-p1);
+  background-color: var(--color-text-purple);
   transition: all 0.3 ease-in-out;
 }
 
@@ -246,13 +226,13 @@ section {
 
 .section__text__p1 {
   text-align: center;
-  color: var(--color-text-p1);
+  color: var(--color-text-purple);
 }
 
 .section__text__p2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--color-text-p2);
+  color: var(--color-text-purple);
 }
 
 .title {
@@ -273,7 +253,7 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
-  color: var(--color-text-p1);
+  color: var(--color-text-purple);
 }
 
 /* Buttons */
@@ -357,7 +337,7 @@ section {
 }
 
 .experience-sub-title {
-  color: var(--color-text-p2);
+  color: var(--color-text-purple);
   margin: 0.5rem;
 }
 
@@ -425,7 +405,6 @@ article .icon {
 
 .project-btn {
   color: var(--color-text);
-  border-color: var(--color-details-border);
 }
 
 .border-gradient-thin {
@@ -481,7 +460,7 @@ audio::-webkit-media-controls-timeline{
   background-color: var(--color-border-gradient-2);
 }
 audio::-webkit-media-controls-volume-slider{
-  background-color: var(--color-text-p1);
+  background-color: var(--color-text-purple);
   border-radius: 50px;
   padding-left: 10px;
   padding-right: 10px;
