@@ -511,8 +511,7 @@ audio::-webkit-media-controls-volume-slider{
 /* Footer Section */
 
 footer {
-  height: 26vh;
-  margin: 0.1rem;
+  height: 14vh;
 }
 
 footer p{
