@@ -359,6 +359,10 @@ section {
   padding: 1.5rem;
 }
 
+.article-container-projects {
+  cursor: pointer;
+}
+
 article {
   display: flex;
   width: 45%;
