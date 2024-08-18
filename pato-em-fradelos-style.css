@@ -1,0 +1,111 @@
+/* General */
+
+@font-face {
+    font-family: 'ThaleahFat';
+    src: url('/assets/fonts/ThaleahFat.woff2') format('woff2');
+    font-weight: 10;
+    font-style: normal;
+}
+
+:root {
+    --color-background: #18101f;
+    --color-text: #ffffff;
+    --color-text-purple: #743ad5;
+    --color-text-title: #f05928;
+    --color-border-gradient-1: #743ad5;
+    --color-border-gradient-2: #d53a9d;
+}
+  
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: black;
+    font-family: 'ThaleahFat', sans-serif; 
+    font-size: 2rem;
+    font-weight: 5;
+    color: var(--color-text);
+}
+
+section {
+    height: 100vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+/* Logo Section */
+
+#section-logo {
+    background-image: url("./assets/gifs/Pato\ em\ Fradelos\ Gif\ Big\ Smaller.gif");
+    background-size: cover;
+    background-position: center;
+    max-height: 80vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo-background-image, .logo-foreground-image {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    opacity: 90%;
+    height:70vh;
+    top:-20%;
+}
+
+.logo-background-image {
+    position: absolute;
+    z-index: 2;
+}
+
+.logo-foreground-image {
+    position: absolute;
+    z-index: 4;
+}
+
+.logo-text {
+    position: absolute;
+    z-index: 3;
+    color: #fff;
+    opacity: 90%;
+    font-size: 3rem;
+    top: 11.7%;
+}
+
+/* Description Section */
+
+#description-title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+#section-description {
+    /* background-image: url("./assets/images/pato em fradelos/Pato\ em\ Fradelos\ Background.png"); */
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.description {
+    padding: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 1.5rem;
+}
+
+/* Video Section */
+
+#section-video {
+    /* background-image: url("./assets/images/pato em fradelos/Pato\ em\ Fradelos\ Background.png"); */
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Galery Section */
