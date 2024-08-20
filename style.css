@@ -9,7 +9,7 @@
 
 :root {
   --color-background: #18101f;
-  --color-text: #e3dde9;
+  --color-text: #ffffff;
   --color-text-purple: #743ad5;
   --color-text-title: #f05928;
   --color-border-gradient-1: #743ad5;
@@ -89,7 +89,7 @@ a:hover {
 .text-easier-font {
   font-family: FFF;
   line-height: 30px;
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
   font-size: 0.95rem;
   -webkit-text-stroke: var(--color-background) 0.8px;
 }
@@ -190,10 +190,9 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  height: fit-content;
 }
 
 .section-container {
@@ -206,13 +205,14 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  min-height: 80vh;
+  flex-wrap: wrap;
 }
 
 .profile-picture {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  max-width: 350px;
   margin: auto 0;
 
   border: 10px solid;
@@ -332,7 +332,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  min-height: 80%;
 }
 
 .text-container {
@@ -343,6 +343,7 @@ section {
 
 #experience {
   position: relative;
+  flex-wrap: wrap;
 }
 
 .experience-sub-title {
@@ -353,7 +354,7 @@ section {
 .experience-details-container {
    display: flex;
    justify-content: center;
-   flex-direction: column;
+   flex-wrap: wrap;
 }
 
 .article-container {
@@ -385,6 +386,7 @@ article .icon {
 
 #game-development {
   position: relative;
+  flex-wrap: wrap;
 }
 
 .project-container {
@@ -451,11 +453,11 @@ article .icon {
 }
 
 #music-production .details-container {
-  width: 30%;
   min-width: 300px; /* Adjust as needed */
   max-width: 30%;
   padding: 1.5rem;
   flex: none; /* Prevent the flex items from stretching */
+  flex-wrap: wrap;
 }
 
 /* Audio Controls */
@@ -485,36 +487,28 @@ audio::-webkit-media-controls-volume-slider{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
 }
 
 .contact-info-upper-container {
-  display: flex;
   justify-content: center;
   background: var(--color-background);
-  margin: 2rem;
-  padding: 0.5rem;
+  margin-top: 2rem;
+  width: 30vw;
+  transform: translateX(75%);
 }
 
 .contact-info-container {
   display:flex;
   align-items: center;
-  justify-content: center;
+  justify-content: justify;
   gap: 0.5rem;
   margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
 }
 
 .contact-icon {
   cursor: default;
   height: 2rem;
-}
-
-.contact-info-row {
-  display: row;
 }
 
 /* Footer Section */
