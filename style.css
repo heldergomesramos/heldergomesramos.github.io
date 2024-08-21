@@ -64,7 +64,7 @@ nav, .nav-links {
 
 nav {
   justify-content: flex-end;
-  margin-right: 2rem;
+  margin-right: clamp(2rem, 8vw + 1rem, 10rem);
   align-items: center;
   height: 10vh;
 }
