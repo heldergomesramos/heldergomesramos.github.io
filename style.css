@@ -258,7 +258,7 @@ section {
   font-size: var(--fs-xl);
   text-align: center;
   color: var(--color-text-title);
-  line-height: 50px;
+  line-height: 60px;
 }
 
 #socials-container {
