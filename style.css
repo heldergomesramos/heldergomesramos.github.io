@@ -108,6 +108,7 @@ a:hover {
 
 .logo {
   font-size: var(--fs-xl);
+  line-height: 64px;
 }
 
 .logo:hover {
