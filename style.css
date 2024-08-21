@@ -63,7 +63,8 @@ nav, .nav-links {
 }
 
 nav {
-  justify-content: space-around;
+  justify-content: flex-end;
+  margin-right: 2rem;
   align-items: center;
   height: 10vh;
 }
@@ -95,7 +96,7 @@ a:hover {
 
 .text-easier-font {
   font-family: FFF;
-  line-height: 30px;
+  line-height: 25px;
   letter-spacing: 1px;
   font-size: var(--fs-300);
   -webkit-text-stroke: var(--color-background) 0.8px;
@@ -167,6 +168,10 @@ a:hover {
 
 .menu-links.open {
   max-height: 300px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to bottom, var(--color-border-gradient-1), var(--color-border-gradient-2));
 }
 
 .hamburger-icon.open span:first-child {
@@ -253,6 +258,7 @@ section {
   font-size: var(--fs-xl);
   text-align: center;
   color: var(--color-text-title);
+  line-height: 50px;
 }
 
 #socials-container {
@@ -489,23 +495,28 @@ audio::-webkit-media-controls-volume-slider{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 60vh;
+  min-height: 40vh;
+  margin-bottom: 2rem;
 }
 
 .contact-info-upper-container {
-  justify-content: center;
-  background: var(--color-background);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   margin-top: 2rem;
-  width: 30vw;
-  transform: translateX(75%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact-info-container {
+.contact-info-item {
   display:flex;
   align-items: center;
-  justify-content: justify;
   gap: 0.5rem;
   margin: 1rem;
+}
+
+.contact-item-1 {
+  grid-column: span 2;
 }
 
 .contact-icon {
