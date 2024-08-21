@@ -520,7 +520,7 @@ audio::-webkit-media-controls-volume-slider{
 }
 
 .contact-icon {
-  cursor: default;
+  cursor: pointer;
   height: 2rem;
 }
 
