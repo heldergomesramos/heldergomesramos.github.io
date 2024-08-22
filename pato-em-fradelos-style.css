@@ -11,10 +11,10 @@
     --color-background: black;
     --color-text: #ffffff;
     --color-text-title: rgb(255, 187, 0);
-    --color-border: rgb(65, 52, 68);
+    --color-border: #ffffff;
 
     --fs-title: 3rem;
-    --fs-normal: 2rem;
+    --fs-normal: 1.5rem;
 }
   
 * {
@@ -34,12 +34,14 @@ section {
     min-height: fit-content;
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-bottom: 2rem;
 }
 
 .title {
     font-size: var(--fs-title);
     text-align: center;
-    padding: 2.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
 }
 
 /* Logo Section */
@@ -91,7 +93,6 @@ section {
 }
 
 #section-description {
-    /* background-image: url("./assets/images/pato em fradelos/Pato\ em\ Fradelos\ Background.png"); */
     background-size: cover;
     display: flex;
     align-content: center;
@@ -101,9 +102,8 @@ section {
 
 .description {
     padding: 2rem;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    font-size: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 /* Video Section */
@@ -114,6 +114,15 @@ section {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.youtube-video {
+    border: 3px solid var(--color-border);
+    border-radius: 25px;
+    width: calc(60vw + 2rem);
+    max-width: calc(60vw + 2rem);
+    height: auto;
+    aspect-ratio: 16/10;
 }
 
 /* Galery Section */
@@ -127,17 +136,78 @@ section {
 .screenshots-grid {
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    gap:2rem;
+    gap:1rem;
 
-    justify-content: center; /* Center the grid horizontally */
-    align-content: center; /* Center the grid vertically if needed */
-    margin: 2rem auto; /* Ensure the grid is centered with some margin on top and bottom */
-    width: max-content; /* Makes the grid as wide as needed, centering the elements */
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 2rem;
+    width: max-content;
 }
 
 .screenshot {
     max-width: 30vw;
     margin: auto;
-    border: 3px solid var(--color-text);
+    border: 3px solid var(--color-border);
     border-radius: 25px;
 }
+
+/* Software Section */
+
+#section-software {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+    min-height: auto;
+}
+
+.software-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Developer Section */
+
+#section-developer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.photo {
+  height: clamp(140px, 15vw + 40px ,175px);
+  object-fit: cover;
+  margin: auto 0;
+  
+  border: 3px solid ;
+  border-radius: 50%;
+  border-color: var(--color-border)
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-item {
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-item-1 {
+    grid-column: span 2;
+}
+  
+.contact-icon {
+    cursor: pointer;
+    height: 2rem;
+}
+  
