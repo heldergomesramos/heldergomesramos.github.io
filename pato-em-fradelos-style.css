@@ -118,7 +118,6 @@ section {
 
 .youtube-video {
     border: 3px solid var(--color-border);
-    border-radius: 25px;
     width: calc(60vw + 2rem);
     max-width: calc(60vw + 2rem);
     height: auto;
@@ -148,7 +147,6 @@ section {
     max-width: 30vw;
     margin: auto;
     border: 3px solid var(--color-border);
-    border-radius: 25px;
 }
 
 /* Software Section */
