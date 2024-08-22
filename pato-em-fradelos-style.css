@@ -8,12 +8,13 @@
 }
 
 :root {
-    --color-background: #18101f;
+    --color-background: black;
     --color-text: #ffffff;
-    --color-text-purple: #743ad5;
-    --color-text-title: #f05928;
-    --color-border-gradient-1: #743ad5;
-    --color-border-gradient-2: #d53a9d;
+    --color-text-title: rgb(255, 187, 0);
+    --color-border: rgb(65, 52, 68);
+
+    --fs-title: 3rem;
+    --fs-normal: 2rem;
 }
   
 * {
@@ -24,15 +25,21 @@
 body {
     background-color: black;
     font-family: 'ThaleahFat', sans-serif; 
-    font-size: 2rem;
+    font-size: var(--fs-normal);
     font-weight: 10;
     color: var(--color-text);
 }
 
 section {
-    height: 80vh;
-    box-sizing: border-box;
     min-height: fit-content;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.title {
+    font-size: var(--fs-title);
+    text-align: center;
+    padding: 2.5rem;
 }
 
 /* Logo Section */
@@ -41,7 +48,7 @@ section {
     background-image: url("./assets/gifs/Pato\ em\ Fradelos\ Gif\ Big\ Smaller.gif");
     background-size: cover;
     background-position: center;
-    max-height: 80vh;
+    height: 80vh;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -78,7 +85,7 @@ section {
 /* Description Section */
 
 #description-title {
-    font-size: 2.5rem;
+    font-size: var(--fs-title);
     text-align: center;
     padding: 2.5rem;
 }
@@ -110,3 +117,27 @@ section {
 }
 
 /* Galery Section */
+
+#section-screenshots {
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.screenshots-grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:2rem;
+
+    justify-content: center; /* Center the grid horizontally */
+    align-content: center; /* Center the grid vertically if needed */
+    margin: 2rem auto; /* Ensure the grid is centered with some margin on top and bottom */
+    width: max-content; /* Makes the grid as wide as needed, centering the elements */
+}
+
+.screenshot {
+    max-width: 30vw;
+    margin: auto;
+    border: 3px solid var(--color-text);
+    border-radius: 25px;
+}
