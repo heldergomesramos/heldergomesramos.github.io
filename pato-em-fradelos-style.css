@@ -28,6 +28,8 @@ body {
     font-size: var(--fs-normal);
     font-weight: 10;
     color: var(--color-text);
+    display:flex;
+    flex-direction: column;
 }
 
 section {
@@ -47,10 +49,10 @@ section {
 /* Logo Section */
 
 #section-logo {
-    background-image: url("./assets/gifs/Pato\ em\ Fradelos\ Gif\ Big\ Smaller.gif");
+    /* background-image: url("./assets/gifs/Pato\ em\ Fradelos\ Gif\ Big\ Smaller.gif"); */
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 10vh;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -60,7 +62,6 @@ section {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
-    opacity: 90%;
     height:70vh;
     top:-20%;
 }
@@ -79,9 +80,20 @@ section {
     position: absolute;
     z-index: 3;
     color: #fff;
-    opacity: 90%;
     font-size: 3rem;
     top: 11.7%;
+}
+
+#section-main-gif {
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height:auto;
+}
+
+.main-gif {
+    width: calc(60vw + 1rem);
 }
 
 /* Description Section */
