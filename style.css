@@ -1,8 +1,8 @@
 /* General */
 
 @font-face {
-  font-family: 'FFF';
-  src: url('/assets/fonts/FFFForward\ Clean.woff2') format('woff2');
+  font-family: "FFF";
+  src: url("/assets/fonts/FFFForward\ Clean.woff2") format("woff2");
   font-weight: bolder;
   font-style: normal;
 }
@@ -23,14 +23,14 @@
   --fs-200: clamp(0.55rem, 1.8vw + 0.25rem, 0.9rem);
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: var(--color-background);
-  font-family: 'FFF', sans-serif; 
+  font-family: "FFF", sans-serif;
 }
 
 html {
@@ -51,14 +51,15 @@ a {
 
 .btn {
   transition: all 300ms ease;
-  font-family: 'FFF', sans-serif; 
+  font-family: "FFF", sans-serif;
   font-size: var(--fs-400);
   -webkit-text-stroke: var(--color-background) 0.8px;
 }
 
 /* Desktop */
 
-nav, .nav-links {
+nav,
+.nav-links {
   display: flex;
 }
 
@@ -104,6 +105,16 @@ a:hover {
 
 .text-justify {
   text-align: justify;
+}
+
+.text-resources {
+  text-align: center;
+  color: var(--color-text-purple);
+  margin-bottom: 0.5rem;
+  margin-top: -0.5rem;
+  line-height: 25px;
+  font-size: var(--fs-300);
+  -webkit-text-stroke: var(--color-background) 0.8px;
 }
 
 .logo {
@@ -172,7 +183,11 @@ a:hover {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 3px;
-  border-image-source: linear-gradient(to bottom, var(--color-border-gradient-1), var(--color-border-gradient-2));
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--color-border-gradient-1),
+    var(--color-border-gradient-2)
+  );
 }
 
 .hamburger-icon.open span:first-child {
@@ -224,7 +239,7 @@ section {
 
 .profile-picture {
   display: flex;
-  height: clamp(270px, 30vw + 80px ,350px);
+  height: clamp(270px, 30vw + 80px, 350px);
   object-fit: cover;
   margin: auto 0;
 
@@ -232,7 +247,7 @@ section {
   border-image-slice: 1;
   border-width: 5px;
   border-radius: 50%;
-  border-color: var(--color-border-gradient-1)
+  border-color: var(--color-border-gradient-1);
 }
 
 .section__text {
@@ -259,7 +274,7 @@ section {
   font-size: var(--fs-xl);
   text-align: center;
   color: var(--color-text-title);
-  line-height: 60px;
+  line-height: 75px;
 }
 
 #socials-container {
@@ -301,11 +316,15 @@ section {
 }
 
 .btn-color:hover {
-  background: linear-gradient(to bottom, var(--color-border-gradient-1), var(--color-border-gradient-2));
+  background: linear-gradient(
+    to bottom,
+    var(--color-border-gradient-1),
+    var(--color-border-gradient-2)
+  );
 }
 
 .btn-color {
-  background:none;
+  background: none;
 }
 
 .btn-container {
@@ -358,10 +377,10 @@ section {
 .skills-containers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap:2rem;
+  gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  min-width:fit-content;
+  min-width: fit-content;
 }
 
 .article-container {
@@ -371,10 +390,7 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 1.2rem;
-  justify-content: row;
-  /* min-width: 300px; */
-  /* max-width: 30%; */
-
+  justify-content: start;
   padding: 1.5rem;
 }
 
@@ -401,7 +417,7 @@ article .icon {
 .projects-main-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap:2rem;
+  gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -416,15 +432,19 @@ article .icon {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
-  border-image-source: linear-gradient(to bottom, var(--color-border-gradient-1), var(--color-border-gradient-2));
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--color-border-gradient-1),
+    var(--color-border-gradient-2)
+  );
 }
 
 .project-img {
-  width: 100%
+  width: 100%;
 }
 
 .project-title {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
   color: var(--color-text);
   font-weight: 500;
@@ -439,27 +459,35 @@ article .icon {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 3px;
-  border-image-source: linear-gradient(to bottom, var(--color-border-gradient-1), var(--color-border-gradient-2));
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--color-border-gradient-1),
+    var(--color-border-gradient-2)
+  );
 }
 
 .border-gradient-normal {
   border: 10px solid;
   border-image-slice: 1;
   border-width: 5px;
-  border-image-source: linear-gradient(to bottom, var(--color-border-gradient-1), var(--color-border-gradient-2));
+  border-image-source: linear-gradient(
+    to bottom,
+    var(--color-border-gradient-1),
+    var(--color-border-gradient-2)
+  );
 }
 
 /* Music Production */
 
 .music-title {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--color-text);
   font-size: var(--fs-400);
   font-weight: 500;
 }
 
 .music-artists {
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
   color: var(--color-border-gradient-2);
   font-size: var(--fs-200);
   font-weight: 10;
@@ -471,19 +499,19 @@ audio {
   max-width: 100%;
 }
 
-audio::-webkit-media-controls-panel{
+audio::-webkit-media-controls-panel {
   background-color: var(--color-border-gradient-2);
 }
-audio::-webkit-media-controls-current-time-display{
+audio::-webkit-media-controls-current-time-display {
   color: var(--color-text);
 }
-audio::-webkit-media-controls-time-remaining-display{
+audio::-webkit-media-controls-time-remaining-display {
   color: var(--color-text);
 }
-audio::-webkit-media-controls-timeline{
+audio::-webkit-media-controls-timeline {
   background-color: var(--color-border-gradient-2);
 }
-audio::-webkit-media-controls-volume-slider{
+audio::-webkit-media-controls-volume-slider {
   background-color: var(--color-text-purple);
   border-radius: 50px;
   padding-left: 10px;
@@ -510,7 +538,7 @@ audio::-webkit-media-controls-volume-slider{
 }
 
 .contact-info-item {
-  display:flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
   margin: 1rem;
@@ -531,7 +559,7 @@ footer {
   height: 10vh;
 }
 
-footer p{
+footer p {
   text-align: center;
 }
 
@@ -571,7 +599,12 @@ footer p{
 /* Gradients */
 
 .gradient-text {
-  background: -webkit-linear-gradient(-86deg, #F05A28 5%, #D91C5C 53%, #A922FF 91%);
+  background: -webkit-linear-gradient(
+    -86deg,
+    #f05a28 5%,
+    #d91c5c 53%,
+    #a922ff 91%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 5px transparent;
