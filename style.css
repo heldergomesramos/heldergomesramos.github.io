@@ -284,6 +284,13 @@ section {
   gap: 1rem;
 }
 
+#socials-container-web {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
 /* Icons */
 
 .icon {
@@ -610,3 +617,11 @@ footer p {
   -webkit-text-stroke: 5px transparent;
   color: #18001d;
 }
+
+/* .gradient-text-snake-1v1 {
+  background: -webkit-linear-gradient(-90deg, #39ff14 25%, #27b077 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  color: #161616;
+} */
